@@ -25,3 +25,21 @@ SELECT ST_AsText(
 FROM places;
 
 -- Outputs: "POLYGON((34.0201 -118.2899,34.019244 -118.285951,34.026469 -118.28019,34.029602 -118.279987,34.027437 -118.283904,34.0239 -118.2884,34.0201 -118.2899))"
+
+-------------------------
+
+-- 2. Find 3 nearest neighbors (as described in https://stackoverflow.com/a/52206905/6148319)
+
+SELECT v.name, v2.name, ST_Distance(v.geom, v2.geom)
+    FROM places v, 
+        lateral(SELECT * 
+                FROM places v2
+                WHERE v2.name <> v.name
+                ORDER BY v.geom <-> v2.geom LIMIT 3) v2
+WHERE v.name = 'The Spot (Home)';
+
+-- Outputs:
+-- name                 name                ST_Distance
+-- "The Spot (Home)";   "GamePipe Lab";     0.00313956971573953
+-- "The Spot (Home)";   "Village Signal";   0.00383807503835152
+-- "The Spot (Home)";   "Taper Hall";       0.00591150885983894

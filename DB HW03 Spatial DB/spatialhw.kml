@@ -90,5 +90,50 @@
             </Polygon>
             <styleUrl>#convexhull</styleUrl>
         </Placemark>
+        <Style id="neighbor">
+            <LineStyle>
+                <width>4</width>
+                <color>#ffffff00</color>
+            </LineStyle>
+        </Style>
+        <Placemark>
+            <name>line(home,neighbor1)</name>
+            <description>Connects The Spot(Home) to GamePipe Lab</description>
+            <LineString>
+                <extrude>1</extrude>
+                <altitudeMode>relativeToGround</altitudeMode>
+                <coordinates>
+                    -118.280190,34.026469,50
+                    -118.279987,34.029602,50
+                </coordinates>
+            </LineString>
+            <styleUrl>#neighbor</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>line(home,neighbor2)</name>
+            <description>Connects The Spot(Home) to Village Signal</description>
+            <LineString>
+                <extrude>1</extrude>
+                <altitudeMode>relativeToGround</altitudeMode>
+                <coordinates>
+                    -118.280190,34.026469,50
+                    -118.283904,34.027437,50
+                </coordinates>
+            </LineString>
+            <styleUrl>#neighbor</styleUrl>
+        </Placemark>
+        <Placemark>
+            <name>line(home,neighbor3)</name>
+            <description>Connects The Spot(Home) to Taper Hall</description>
+            <LineString>
+                <extrude>1</extrude>
+                <altitudeMode>relativeToGround</altitudeMode>
+                <coordinates>
+                    -118.280190,34.026469,50
+                    -118.284221,34.022145,50
+                </coordinates>
+            </LineString>
+            <styleUrl>#neighbor</styleUrl>
+        </Placemark>
     </Document>
 </kml>
