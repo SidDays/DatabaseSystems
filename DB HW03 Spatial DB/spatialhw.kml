@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.0">
     <Document>
+        <name>SpatialHW</name>
         <Placemark>
             <name>The Spot (Home)</name>
             <Point>
@@ -61,6 +62,33 @@
             <Point>
                 <coordinates>-118.284221,34.022145</coordinates>
             </Point>
+        </Placemark>
+        <Style id="convexhull">
+            <PolyStyle>
+                <color>#a00000ff</color>
+                <outline>1</outline>
+            </PolyStyle>
+        </Style>
+        <Placemark>
+            <name>Convex Hull</name>
+            <Polygon>
+                <extrude>1</extrude>
+                <altitudeMode>relativeToGround</altitudeMode>
+                <outerBoundaryIs>
+                    <LinearRing>
+                        <coordinates>
+                            -118.289900,34.020100,50
+                            -118.285951,34.019244,50
+                            -118.280190,34.026469,50
+                            -118.279987,34.029602,50
+                            -118.283904,34.027437,50
+                            -118.288400,34.023900,50
+                            -118.289900,34.020100,50
+                        </coordinates>
+                    </LinearRing>
+                </outerBoundaryIs>
+            </Polygon>
+            <styleUrl>#convexhull</styleUrl>
         </Placemark>
     </Document>
 </kml>
