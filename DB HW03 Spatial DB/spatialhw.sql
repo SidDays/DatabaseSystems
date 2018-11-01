@@ -1,4 +1,4 @@
--- 1. Store points
+-- 0. Store points and create table
 CREATE TABLE places (name varchar, geom geometry);
 
 INSERT INTO places VALUES
@@ -12,9 +12,12 @@ INSERT INTO places VALUES
     ('Tommy Trojan',    'POINT(34.020464 -118.285417)'),
     ('Taper Hall',      'POINT(34.022145 -118.284221)');
 
-SELECT name, ST_AsText(geom) FROM places;
+-- SELECT name, ST_AsText(geom) FROM places;
 
--- 2. Generate convex hull
+-------------------------
+
+-- 1. Generate convex hull
+
 SELECT ST_AsText(
     ST_ConvexHull(
         ST_Collect(
