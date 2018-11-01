@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+    <Document>
+        <Placemark>
+            <name>The Spot (Home)</name>
+            <Point>
+                <coordinates>-118.280190,34.026469</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Bridge Mm. Hall</name>
+            <description>Bridge Memorial Hall (BRI)</description>
+            <Point>
+                <coordinates>-118.285951,34.019244</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>GamePipe Lab</name>
+            <description>USC GamePipe Laboratory</description>
+            <Point>
+                <coordinates>-118.279987,34.029602</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Village Signal</name>
+            <description>A road intersection at one corner of the USC Village</description>
+            <Point>
+                <coordinates>-118.283904,34.027437</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>RTH</name>
+            <description>Ronald Tutor Hall (RTH)</description>
+            <Point>
+                <coordinates>-118.289900,34.020100</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Uytengsu</name>
+            <description>Uytengsu Aquatics Center (UAC)</description>
+            <Point>
+                <coordinates>-118.288400,34.023900</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Cromwell Field</name>
+            <description>Cromwell Track and Field</description>
+            <Point>
+                <coordinates>-118.287900,34.022000</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Tommy Trojan</name>
+            <Point>
+                <coordinates>-118.285417,34.020464</coordinates>
+            </Point>
+        </Placemark>
+        <Placemark>
+            <name>Taper Hall</name>
+            <description>Mark Taper Hall (THH)</description>
+            <Point>
+                <coordinates>-118.284221,34.022145</coordinates>
+            </Point>
+        </Placemark>
+    </Document>
+</kml>
